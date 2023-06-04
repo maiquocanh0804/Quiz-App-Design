@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-family: 'Gilroy';
+}
+
+@font-face {
+  font-family: Gilroy;
+  src: url(assets/Font/SVN_Gilroy-Light.woff2);
+}
+@font-face {
+  font-family: Gilroy-Bold;
+  src: url(assets/Font/SVN_Gilroy-Bold.woff2);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  overflow-y: overlay;
+  font-family: var(--font-family);
+  font-size: 1.6rem;
+  line-height: 1.5rem;
+  color: var(--text--color);
+}
+
+html *::-webkit-scrollbar {
+  border-radius: 0;
+  width: 8px;
+}
+html *::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(22, 24, 35, 0.06);
+}
+html *::-webkit-scrollbar-track {
+  border-radius: 0;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+button,
+input,
+[typeindex] {
+  outline: none;
+  border: none;
+}
+
+a[href] {
+  color: var(--text--color);
+  text-decoration: none;
+}
